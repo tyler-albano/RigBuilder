@@ -1,37 +1,68 @@
 # RigBuilder
+
 Android app for comparing PC part prices and building custom rigs.
 
+---
+
 ## Project Description
-RigBuilder is an Android mobile application designed to help users compare computer components and plan custom PC builds in one centralized platform. The app simplifies the PC building process by allowing users to browse parts, filter/search components, view details, build a custom PC list, and check basic CPU/motherboard compatibility.
+RigBuilder is an Android mobile application designed to assist users in building custom personal computers by providing a centralized platform for browsing, comparing, and selecting PC components. The application allows users to explore hardware options, view detailed specifications, and assemble a custom build while tracking total cost. The app also includes a compatibility checking system to ensure selected components work together.
+
+---
 
 ## Problem Being Addressed
-Building a PC requires users to compare parts, prices, and compatibility across multiple sources. This process can be time-consuming and confusing, especially for beginners.
+Building a custom PC requires comparing components, evaluating specifications, and ensuring compatibility between parts. This process can be time-consuming and confusing, especially for beginners.
 
-RigBuilder helps solve this problem by providing:
-- Organized PC part listings
-- Search and category filtering
-- Build planning tools
-- One-part-per-category logic
-- CPU and motherboard compatibility checking
+RigBuilder addresses these challenges by:
+- Organizing PC components into categories
+- Providing search and filtering tools
+- Allowing users to build and manage a custom PC configuration
+- Enforcing one-part-per-category selection logic
+- Implementing compatibility checks between CPU and motherboard components
+
+---
 
 ## Platform
-- Android
+- Android (Primary platform)
 - Developed using Android Studio
 - Programming Language: Kotlin
-- XML for layouts
+- UI Design: XML Layouts
+- Version Control: GitHub
 
-## Current Functionality
-- Display a list of PC parts
+---
+
+## Front-End and Back-End Support
+
+### Front-End
+- Built using XML layouts and Kotlin
+- RecyclerView for dynamic part listings
+- Interactive UI components (buttons, search bar, filters)
+- Multiple activities:
+  - MainActivity (part listing)
+  - DetailActivity (part details)
+  - BuildActivity (custom build view)
+
+### Back-End
+- Local mock data for PC components
+- Kotlin data classes for data modeling
+- Centralized build management using `BuildManager`
+- No external database integration (planned for future)
+
+---
+
+## Functionality
+RigBuilder currently includes:
+
+- Display list of PC components
 - Search parts by name, brand, or category
-- Filter parts by category
+- Filter parts by category (CPU, GPU, RAM, Storage, etc.)
 - View detailed part information
-- Add parts to a build
-- Replace existing parts by category
-- View selected build parts
-- Remove individual parts
-- Clear the entire build
+- Add parts to a custom build
+- Replace parts within the same category
+- View selected build components
+- Remove individual parts from build
+- Clear entire build
 - Calculate total build cost
-- Check CPU and motherboard socket compatibility
+- Check compatibility between CPU and motherboard (socket-based)
 
 ## Design Wireframes
 Wireframes show the planned layout for:
@@ -50,11 +81,3 @@ Wireframes show the planned layout for:
 - RecyclerView
 - Android SDK
 - Local mock data
-
-## Planned Future Enhancements
-- Firebase integration
-- Real retailer API integration
-- Saved builds
-- User accounts
-- Price drop alerts
-- Expanded compatibility rules
