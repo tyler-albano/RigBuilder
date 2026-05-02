@@ -2,87 +2,59 @@
 Android app for comparing PC part prices and building custom rigs.
 
 ## Project Description
-RigBuilder is an Android mobile application designed to help users compare computer components and plan custom PC builds in one centralized platform. The app aims to simplify the process of building a computer by organizing product information, supporting comparison, and enabling future build planning features.
-
-At the current stage, RigBuilder is a working prototype that demonstrates a core feature: displaying a list of PC parts using a modern Android UI.
-
----
+RigBuilder is an Android mobile application designed to help users compare computer components and plan custom PC builds in one centralized platform. The app simplifies the PC building process by allowing users to browse parts, filter/search components, view details, build a custom PC list, and check basic CPU/motherboard compatibility.
 
 ## Problem Being Addressed
-Building a PC requires comparing prices across multiple websites and ensuring compatibility between parts. This process is time-consuming and confusing.
+Building a PC requires users to compare parts, prices, and compatibility across multiple sources. This process can be time-consuming and confusing, especially for beginners.
 
-RigBuilder addresses this problem by providing:
-- A centralized view of PC components
-- Organized part information
-- A foundation for future comparison and build tools
-
----
+RigBuilder helps solve this problem by providing:
+- Organized PC part listings
+- Search and category filtering
+- Build planning tools
+- One-part-per-category logic
+- CPU and motherboard compatibility checking
 
 ## Platform
-- Android (Primary platform)
+- Android
 - Developed using Android Studio
 - Programming Language: Kotlin
+- XML for layouts
 
----
-
-## Front-End and Back-End Support
-
-### Front-End
-- Android UI built with XML and Kotlin
-- RecyclerView used to display a dynamic, scrollable list of PC parts
-- Simple and user-friendly interface with structured item layouts
-- Designed to support future navigation and additional screens
-
-### Back-End
-- Currently uses **local mock data** for development
-- Data structured using a Kotlin data class (`PCPart`)
-- Data managed through a mock provider (`MockPartsData`)
-
-> Note: Firebase and API integration are planned for future implementation.
-
----
-
-## Functionality
-
-### Current Functionality
+## Current Functionality
 - Display a list of PC parts
-- Show part details (name, category, brand, and price)
-- Scrollable list using RecyclerView
+- Search parts by name, brand, or category
+- Filter parts by category
+- View detailed part information
+- Add parts to a build
+- Replace existing parts by category
+- View selected build parts
+- Remove individual parts
+- Clear the entire build
+- Calculate total build cost
+- Check CPU and motherboard socket compatibility
 
-### Planned Functionality
-- Search and filter PC parts
-- Compare prices across retailers
-- Product detail screen
-- Build planner for custom PCs
-- Compatibility checker
-- Budget tracking
-- User profile and saved builds
-
----
-
-## Design (Wireframes)
-Wireframes illustrate the layout of key screens including:
+## Design Wireframes
+Wireframes show the planned layout for:
 - Home screen
 - Product listing screen
 - Product detail screen
 - Build planner screen
 - User profile screen
 
-Current implementation reflects the **Product Listing screen**.
-
 ![Wireframes](docs/wireframes.png)
 
----
-
 ## Technologies Used
-
-### Current Technologies
 - Android Studio
 - Kotlin
 - XML layouts
 - RecyclerView
 - Android SDK
+- Local mock data
 
-### Planned Technologies
-- Firebase (Authentication, Firestore)
-- REST APIs / JSON
+## Planned Future Enhancements
+- Firebase integration
+- Real retailer API integration
+- Saved builds
+- User accounts
+- Price drop alerts
+- Expanded compatibility rules
