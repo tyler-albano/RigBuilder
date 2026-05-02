@@ -2,30 +2,40 @@
 
 All notable changes to RigBuilder will be documented in this file.
 
-## [0.2.0] - 2026-04-10
+## [0.5.0] - 2026-05-02
 ### Added
-- RecyclerView for displaying PC parts
-- `PCPart` data model
-- `MockPartsData` sample dataset
-- `PCPartAdapter` for binding part data to the list
-- Main screen layout with title and part list
-- `item_part.xml` row layout for each PC component
+- Category filtering for PC parts
+- Search bar for searching by name, brand, or category
+- Expanded mock PC parts dataset
+- Build planner screen
+- Add to Build functionality
+- One-part-per-category replacement logic
+- Remove individual parts from build
+- Clear Build button
+- Total build price calculation
+- CPU and motherboard compatibility checker
+- Socket field added to PC part data model
 
 ### Changed
-- Updated README to reflect current prototype status
-- Updated project outline to separate current functionality from planned functionality
+- Updated README to reflect current app functionality
+- Updated build logic to manage parts by category
+- Improved project scope from prototype list app to functional PC build planner
 
-### Notes
-- Current app now displays a working list of sample PC parts
-- Click handling and detail screen are planned next
+## [0.2.0] - 2026-04-10
+### Added
+- Working Android prototype
+- RecyclerView-based PC parts list
+- PCPart data model
+- MockPartsData local sample data
+- PCPartAdapter for displaying parts
+- Main activity UI with scrollable part list
+- item_part.xml layout for part rows
 
-## [0.1.0] - 2026-04-09
+## [0.1.0] - 2026-04-10
 ### Added
 - Initial GitHub repository setup
-- README project outline
+- README documentation
 - Wiki outline
-- `docs/diagrams.md`
-- `docs/wireframes.png`
-
-### Notes
-- Initial documentation and project structure created
+- Wireframes
+- Diagrams
+- Project folder structure
